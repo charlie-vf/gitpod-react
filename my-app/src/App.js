@@ -17,7 +17,8 @@ function App() {
       if components wrap other components, close them with a </> tag 
       */}
       <FunctionalGreeting />
-      <FunctionalGreetingWithProps />
+      {/* greeting= is a prop */}
+      <FunctionalGreetingWithProps greeting="nice to meet you!" name="Mike" age="32" />
     </div>
   );
 }
