@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import FunctionalGreeting from './components/FunctionalGreeting';
-import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
+// import FunctionalGreeting from './components/FunctionalGreeting';
+// import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
+// import StatefulGreeting from './components/StatefulGreeting';
+// import StatefulGreetingWithCallback from './components/StatefulGreetingWithCallback';
+import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
 
 /* 
   Functional component
@@ -16,9 +19,12 @@ function App() {
       what it renders itself, it doesn't need a closing tag, just a self-closing 
       if components wrap other components, close them with a </> tag 
       */}
-      <FunctionalGreeting />
+      {/* <FunctionalGreeting /> */}
       {/* greeting= is a prop */}
-      <FunctionalGreetingWithProps greeting="nice to meet you!" name="Mike" age="32" />
+      {/* <FunctionalGreetingWithProps greeting="nice to meet you!" name="Mike" age="32" />
+      <StatefulGreeting greeting="I'm a stateful class component" name="Mike" /> */}
+      {/* <StatefulGreetingWithCallback greeting="I'm a stateful class component with callback"/> */}
+      <StatefulGreetingWithPrevState greeting="I'm a stateful class with a previous state" />
     </div>
   );
 }
